@@ -46,9 +46,9 @@ const itemVariants = {
 
 export function PainSection() {
   return (
-    <section className="py-24 bg-black">
+    <section className="min-h-screen flex flex-col justify-center py-16 md:py-20 bg-black">
       <div className="container max-w-7xl mx-auto px-4 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left content */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -56,19 +56,19 @@ export function PainSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 bg-yellow/10 border border-yellow/20 rounded-full px-4 py-1.5 mb-6">
+            {/* <div className="inline-flex items-center gap-2 bg-yellow/10 border border-yellow/20 rounded-full px-4 py-1.5 mb-6">
               <AlertTriangle className="w-3 h-3 text-yellow" />
               <span className="text-[10px] font-bold text-yellow uppercase tracking-[1.5px]">
                 Diagnóstico Honesto
               </span>
-            </div>
+            </div> */}
             
-            <h2 className="font-display text-[clamp(36px,5vw,64px)] leading-[0.95] tracking-[0.04em] mb-5">
+            <h2 className="font-display text-[clamp(26px,3.6vw,46px)] leading-[0.95] tracking-[0.04em] mb-5">
               VOCÊ ESTÁ<br />PRESO NESSES<br />
               <span className="text-yellow">PROBLEMAS?</span>
             </h2>
-            
-            <p className="text-base text-white/60 leading-relaxed max-w-[420px] mb-8">
+
+            <p className="text-sm md:text-base text-white/60 leading-relaxed max-w-[420px] mb-7">
               A maioria das empresas desperdiça verba em marketing porque nunca estruturou o processo. Reconheça o diagnóstico antes de qualquer decisão.
             </p>
             
@@ -100,7 +100,7 @@ export function PainSection() {
                   borderColor: "rgba(255,215,0,0.25)",
                   backgroundColor: "rgba(255,255,255,0.02)"
                 }}
-                className="flex items-start gap-4 p-5 bg-surface-2 border border-white/10 rounded-lg transition-all duration-300 cursor-default"
+                className="flex items-start gap-4 p-4 bg-surface-2 border border-white/10 rounded-lg transition-all duration-300 cursor-default"
               >
                 <div className="w-11 h-11 flex-shrink-0 rounded-lg bg-yellow/10 border border-yellow/20 flex items-center justify-center transition-all">
                   <pain.icon className="w-[18px] h-[18px] text-yellow" />

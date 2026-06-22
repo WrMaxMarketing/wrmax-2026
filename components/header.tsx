@@ -44,11 +44,11 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-branca-wrmax-SnGGeKahCe1PesfhQ1VzQRQYFyvKgp.png"
+              src="/LOGO%20-%20WRMAX.png"
               alt="WRMAX Marketing Digital"
-              width={140}
-              height={40}
-              className="h-10 w-auto"
+              width={180}
+              height={52}
+              className="h-14 w-auto"
             />
           </Link>
 

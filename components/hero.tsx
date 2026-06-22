@@ -1,7 +1,7 @@
 "use client"
 
 import { motion, useScroll, useTransform } from "framer-motion"
-import { ArrowRight, PlayCircle } from "lucide-react"
+import { ArrowRight, Check, MessageCircle } from "lucide-react"
 import Image from "next/image"
 import { useRef } from "react"
 import { AnimatedCounter } from "./animated-counter"
@@ -43,17 +43,6 @@ export function Hero() {
           {/* Overlay gradients */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_80%_at_60%_85%,rgba(255,215,0,0.15)_0%,transparent_55%)]" />
-
-          {/* Nameplate */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2, duration: 0.6 }}
-            className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 text-center glass border border-yellow/25 rounded-xl px-7 py-4 min-w-[230px]"
-          >
-            <p className="font-display text-xl text-yellow tracking-[3px]">ROBERTH MOREIRA</p>
-            <p className="text-[9px] text-white/60 uppercase tracking-[2.5px] mt-1">CEO & Estrategista</p>
-          </motion.div>
         </div>
         
         {/* Overlay gradient */}
@@ -64,7 +53,7 @@ export function Hero() {
       <motion.div style={{ opacity }} className="container relative z-10 max-w-7xl mx-auto px-4 md:px-12 py-20">
         <div className="max-w-[600px]">
           {/* Tag */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -77,19 +66,19 @@ export function Hero() {
             <span className="text-[10px] font-bold text-yellow uppercase tracking-[1.5px]">
               Hub de Estratégia · Teresina — PI
             </span>
-          </motion.div>
+          </motion.div> */}
 
           {/* Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-[clamp(6px,5vw,54px)] leading-[0.95] tracking-[0.04em] mb-4"
+            className="font-display text-[clamp(28px,4.4vw,48px)] leading-[1.02] tracking-[0.02em] mb-4"
           >
-            NÃO É APENAS<br />
-            <span className="text-yellow">TRÁFEGO.</span><br />
-            É ESTRUTURAÇÃO<br />
-            DE VENDAS <span className="text-yellow">COM IA.</span>
+            ANTES DE INVESTIR<br />
+            NOVAMENTE EM MARKETING,<br />
+            DESCUBRA <span className="text-yellow">ONDE SUA<br />
+            EMPRESA ESTÁ FALHANDO.</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -97,10 +86,10 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-sm text-white/60 leading-relaxed max-w-[420px] mb-6"
+            className="text-sm text-white/60 leading-relaxed max-w-[440px] mb-6"
           >
-            Ajudamos empresas de Teresina e de todo o Brasil a escalarem o faturamento com o método de Growth mais rigoroso do mercado.{" "}
-            <strong className="text-white">Sem achismo. Só resultado.</strong>
+            A <strong className="text-white">WRMAX Marketing</strong> identifica os gargalos que impedem o seu marketing de se tornar um{" "}
+            <strong className="text-white">crescimento previsível.</strong>
           </motion.p>
 
           {/* CTAs */}
@@ -108,7 +97,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap gap-3 mb-8"
+            className="flex flex-wrap gap-3 mb-4"
           >
             <motion.a
               href="#contato"
@@ -116,18 +105,39 @@ export function Hero() {
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center gap-2 bg-green text-white px-6 py-3 rounded-lg text-[12px] font-bold uppercase tracking-wider glow-green transition-all"
             >
-              QUERO ESCALAR MEU NEGÓCIO
+              RECEBER DIAGNÓSTICO GRATUITO
               <ArrowRight className="w-3.5 h-3.5" />
             </motion.a>
             <motion.a
-              href="#metodo"
+              href="https://wa.me/5586999999999"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.02, y: -2, borderColor: "rgba(255,215,0,0.5)" }}
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center gap-2 bg-transparent text-yellow border-2 border-yellow/35 px-6 py-3 rounded-lg text-[12px] font-bold uppercase tracking-wider transition-all hover:bg-yellow hover:text-black"
             >
-              <PlayCircle className="w-3.5 h-3.5" />
-              VER O MÉTODO
+              <MessageCircle className="w-3.5 h-3.5" />
+              FALAR DIRETAMENTE
             </motion.a>
+          </motion.div>
+
+          {/* Diagnostic checks */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.35 }}
+            className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-8"
+          >
+            {["Diagnóstico inicial sem compromisso", "Análise de marketing"].map((item) => (
+              <div key={item} className="flex items-center gap-2">
+                <span className="w-[18px] h-[18px] flex-shrink-0 bg-yellow rounded-full flex items-center justify-center">
+                  <Check className="w-[10px] h-[10px] text-black" strokeWidth={3} />
+                </span>
+                <span className="text-[11px] font-semibold text-white/70 uppercase tracking-[0.5px]">
+                  {item}
+                </span>
+              </div>
+            ))}
           </motion.div>
 
           {/* Stats */}
@@ -151,8 +161,9 @@ export function Hero() {
             </div>
             <div className="text-left pl-4 border-l border-white/10">
               <span className="font-display text-[32px] text-yellow leading-none tracking-wider">24/7</span>
-              <p className="text-[8px] text-white/40 uppercase tracking-[1.5px] mt-1">
-                Agentes IA<br />Ativos
+              <p className="text-[8px] text-white/40 uppercase tracking-normal mt-1 leading-tight">
+                <span className="whitespace-nowrap">24 horas por dia,</span><br />
+                <span className="whitespace-nowrap">7 dias por semana</span>
               </p>
             </div>
           </motion.div>

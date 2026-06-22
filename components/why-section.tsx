@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Shield, BookOpen, Cpu, MapPin, UserCheck } from "lucide-react"
+import { BookOpen, Cpu, MapPin, UserCheck } from "lucide-react"
 
 const differentials = [
   {
@@ -41,29 +41,29 @@ const itemVariants = {
 
 export function WhySection() {
   return (
-    <section className="py-24 bg-surface-1">
+    <section className="min-h-screen flex flex-col justify-center py-16 md:py-20 bg-surface-1">
       <div className="container max-w-7xl mx-auto px-4 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left content */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <div className="inline-flex items-center gap-2 bg-yellow/10 border border-yellow/20 rounded-full px-4 py-1.5 mb-6">
+            {/* <div className="inline-flex items-center gap-2 bg-yellow/10 border border-yellow/20 rounded-full px-4 py-1.5 mb-6">
               <Shield className="w-3 h-3 text-yellow" />
               <span className="text-[10px] font-bold text-yellow uppercase tracking-[1.5px]">
                 Por que a WRMAX?
               </span>
-            </div>
+            </div> */}
             
-            <h2 className="font-display text-[clamp(36px,5vw,64px)] leading-[0.95] tracking-[0.04em] mb-5">
+            <h2 className="font-display text-[clamp(26px,3.6vw,46px)] leading-[0.95] tracking-[0.04em] mb-5">
               NÃO SOMOS<br />UMA AGÊNCIA.<br />
               <span className="text-yellow">SOMOS SEU<br />DEPARTAMENTO<br />DE CRESCIMENTO.</span>
             </h2>
             
-            <p className="text-base text-white/60 leading-relaxed max-w-[440px]">
-              Agências tradicionais entregam relatórios. Nós entregamos sistemas de vendas que operam 24 horas, 7 dias por semana — integrando tráfego, IA e automação ponta a ponta.
+            <p className="text-sm md:text-base text-white/60 leading-relaxed max-w-[440px]">
+              Agências tradicionais entregam relatórios. Nós entregamos sistemas de vendas que operam <span className="whitespace-nowrap">24 horas por dia</span>, <span className="whitespace-nowrap">7 dias por semana</span> — integrando tráfego, IA e automação ponta a ponta.
             </p>
           </motion.div>
 
@@ -84,7 +84,7 @@ export function WhySection() {
                   borderColor: "rgba(255,215,0,0.25)",
                   backgroundColor: "rgba(255,255,255,0.02)"
                 }}
-                className="flex items-start gap-4 p-5 bg-surface-2 border border-white/10 rounded-lg transition-all duration-300"
+                className="flex items-start gap-4 p-4 bg-surface-2 border border-white/10 rounded-lg transition-all duration-300"
               >
                 <div className="w-11 h-11 flex-shrink-0 rounded-lg bg-yellow/10 border border-yellow/20 flex items-center justify-center group-hover:bg-yellow/[0.15] transition-all">
                   <diff.icon className="w-[18px] h-[18px] text-yellow" />

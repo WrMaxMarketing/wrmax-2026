@@ -77,27 +77,27 @@ const cardVariants = {
 
 export function MethodSection() {
   return (
-    <section id="metodo" className="py-24 bg-surface-1">
+    <section id="metodo" className="min-h-screen flex flex-col justify-center py-14 md:py-16 bg-surface-1">
       <div className="container max-w-7xl mx-auto px-4 md:px-12">
         {/* Header */}
-        <div className="text-center mb-14">
-          <motion.div
+        <div className="text-center mb-8">
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="inline-flex items-center gap-2 bg-yellow/10 border border-yellow/20 rounded-full px-4 py-1.5 mb-5"
-          >
-            <Layers className="w-3 h-3 text-yellow" />
-            <span className="text-[10px] font-bold text-yellow uppercase tracking-[1.5px]">
+          > */}
+            {/* <Layers className="w-3 h-3 text-yellow" /> */}
+            {/* <span className="text-[10px] font-bold text-yellow uppercase tracking-[1.5px]">
               A Solução Completa
-            </span>
-          </motion.div>
+            </span> */}
+          {/* </motion.div> */}
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="font-display text-[clamp(36px,5vw,64px)] leading-[0.95] tracking-[0.04em] mb-4"
+            className="font-display text-[clamp(26px,3.6vw,46px)] leading-[0.95] tracking-[0.04em] mb-3"
           >
             O MÉTODO <span className="text-yellow">WRMAX</span>
           </motion.h2>
@@ -118,7 +118,7 @@ export function MethodSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12"
+          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8"
         >
           {methodCards.map((card, index) => (
             <motion.div
@@ -129,7 +129,7 @@ export function MethodSection() {
                 borderColor: "rgba(255,215,0,0.3)",
                 boxShadow: "0 30px 60px rgba(0,0,0,0.5)"
               }}
-              className="relative bg-surface-2 border border-white/10 rounded-2xl p-8 transition-all duration-400 overflow-hidden group"
+              className="relative bg-surface-2 border border-white/10 rounded-2xl p-6 transition-all duration-400 overflow-hidden group"
             >
               {/* Number background */}
               <span className="absolute top-4 right-5 font-display text-[64px] text-white/[0.03] leading-none pointer-events-none group-hover:text-yellow/[0.06] transition-colors">
@@ -183,19 +183,19 @@ export function MethodSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-surface-2 border border-white/10 rounded-2xl px-6 py-10"
+          className="bg-surface-2 border border-white/10 rounded-2xl px-6 py-7"
         >
-          <p className="text-[10px] font-bold text-yellow uppercase tracking-[3px] text-center mb-12">
+          <p className="text-[10px] font-bold text-yellow uppercase tracking-[3px] text-center mb-8">
             Como o Método Funciona na Prática
           </p>
 
           {/* DESKTOP TIMELINE */}
-          <div className="hidden md:block relative pt-6">
-            <div className="relative h-[260px] max-w-6xl mx-auto">
+          <div className="hidden md:block relative pt-4">
+            <div className="relative h-[210px] max-w-6xl mx-auto">
 
               {/* linha horizontal */}
               <motion.div
-                className="absolute left-[5%] right-[5%] top-[150px] h-[2px] bg-gradient-to-r from-yellow/10 via-yellow/70 to-yellow/10"
+                className="absolute left-[5%] right-[5%] top-[128px] h-[2px] bg-gradient-to-r from-yellow/10 via-yellow/70 to-yellow/10"
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
@@ -217,16 +217,16 @@ export function MethodSection() {
                     style={{ left: positions[index] }}
                   >
                     {/* círculo principal */}
-                    <div className="relative mx-auto w-[96px] h-[96px] rounded-full bg-black border border-yellow/40 flex items-center justify-center shadow-[0_18px_40px_rgba(0,0,0,0.45)]">
+                    <div className="relative mx-auto w-[84px] h-[84px] rounded-full bg-black border border-yellow/40 flex items-center justify-center shadow-[0_18px_40px_rgba(0,0,0,0.45)]">
                       <div className="absolute inset-2 rounded-full border border-yellow/20" />
 
-                      <div className="w-[62px] h-[62px] rounded-full bg-yellow/10 border border-yellow/50 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-yellow/20">
-                        <step.icon className="w-6 h-6 text-yellow" />
+                      <div className="w-[54px] h-[54px] rounded-full bg-yellow/10 border border-yellow/50 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-yellow/20">
+                        <step.icon className="w-5 h-5 text-yellow" />
                       </div>
                     </div>
 
                     {/* haste até a linha */}
-                    <div className="mx-auto w-[1px] h-[54px] bg-gradient-to-b from-yellow/50 to-yellow/10" />
+                    <div className="mx-auto w-[1px] h-[44px] bg-gradient-to-b from-yellow/50 to-yellow/10" />
 
                     {/* bolinha na linha */}
                     <div className="relative z-10 mx-auto -mt-[11px] w-[24px] h-[24px] rounded-full bg-yellow text-black text-[10px] font-bold flex items-center justify-center border-[3px] border-black">

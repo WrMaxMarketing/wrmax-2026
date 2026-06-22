@@ -1,9 +1,9 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowUpRight, MapPin, Phone, Mail, Instagram, Linkedin, Youtube } from "lucide-react"
-import Link from "next/link"
+import { ArrowUpRight, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 const footerLinks = [
   { label: "Método WRMAX", href: "#metodo" },
@@ -27,11 +27,11 @@ export function Footer() {
           <div>
             <Link href="/" className="inline-block mb-5">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo-branca-wrmax-SnGGeKahCe1PesfhQ1VzQRQYFyvKgp.png"
+                src="/LOGO%20-%20WRMAX.png"
                 alt="WRMAX Marketing Digital"
-                width={120}
-                height={35}
-                className="h-9 w-auto"
+                width={160}
+                height={46}
+                className="h-12 w-auto"
               />
             </Link>
             <p className="text-[13px] text-white/50 leading-relaxed mb-5">
@@ -83,7 +83,7 @@ export function Footer() {
                 className="text-sm text-white/50 hover:text-white transition-colors flex items-center gap-2"
               >
                 <Phone className="w-3.5 h-3.5 text-yellow" />
-                (86) 99999-9999
+                (86) 9 9918-8465
               </a>
               <a
                 href="mailto:contato@wrmax.com.br"

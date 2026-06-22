@@ -31,11 +31,11 @@ export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <section id="faq" className="py-24 bg-surface-1">
+    <section id="faq" className="min-h-screen flex flex-col justify-center py-16 md:py-20 bg-surface-1">
       <div className="container max-w-7xl mx-auto px-4 md:px-12">
         {/* Header */}
-        <div className="text-center mb-10">
-          <motion.div
+        <div className="text-center mb-8">
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -45,13 +45,13 @@ export function FAQSection() {
             <span className="text-[10px] font-bold text-yellow uppercase tracking-[1.5px]">
               Dúvidas Frequentes
             </span>
-          </motion.div>
+          </motion.div> */}
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="font-display text-[clamp(36px,5vw,64px)] leading-[0.95] tracking-[0.04em]"
+            className="font-display text-[clamp(26px,3.6vw,46px)] leading-[0.95] tracking-[0.04em]"
           >
             TIRE SUAS DÚVIDAS<br /><span className="text-yellow">ANTES DE COMEÇAR</span>
           </motion.h2>
