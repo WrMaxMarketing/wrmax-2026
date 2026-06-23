@@ -55,9 +55,9 @@ const orbitLogos = [
 ]
 
 const features = [
-  "Identificacao de solucoes de IA para automatizar processos e reduzir custos operacionais",
-  "Implementacao rapida nas campanhas de marketing para gerar insights de alta performance",
-  "Analise continua de dados para eliminar desperdicio e aumentar as margens de lucro",
+  "Identificação de soluções de IA para automatizar processos e reduzir custos operacionais",
+  "Implementação rápida nas campanhas de marketing para gerar insights de alta performance",
+  "Análise contínua de dados para eliminar desperdício e aumentar as margens de lucro",
   "Agentes conversacionais que qualificam e convertem leads enquanto sua equipe dorme",
 ]
 
@@ -189,11 +189,11 @@ export function OrbitSection() {
             
             <h2 className="font-display text-[clamp(26px,3.6vw,46px)] leading-[0.95] tracking-[0.04em] mb-5">
               IMPLEMENTAMOS A TECNOLOGIA<br />
-              <span className="text-yellow">CERTA PARA</span> SEU NEGOCIO
+              <span className="text-yellow">CERTA PARA</span> SEU NEGÓCIO
             </h2>
             
             <p className="text-base text-white/60 leading-relaxed mb-7">
-              Enquanto voce foca no negocio, nos integramos as ferramentas de IA mais avancadas do mercado ao seu processo comercial — com foco total em resultado, nao em experimentacao.
+              Enquanto você foca no negócio, nós integramos as ferramentas de IA mais avançadas do mercado ao seu processo comercial, com foco total em resultado, não em experimentação.
             </p>
             
             {/* Features list */}

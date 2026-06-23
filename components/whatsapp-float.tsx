@@ -1,12 +1,12 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { MessageCircle } from "lucide-react"
+import { WhatsappIcon } from "./whatsapp-icon"
 
 export function WhatsAppFloat() {
   return (
     <motion.a
-      href="https://wa.me/5586999999999"
+      href="https://wa.me/5586999188465?text=Ol%C3%A1,%20vim%20do%20site%20da%20Wrmax%20e%20gostaria%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20de%20marketing."
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, scale: 0 }}
@@ -20,7 +20,7 @@ export function WhatsAppFloat() {
       {/* Ping animation */}
       <span className="absolute inset-[-6px] rounded-full border border-green/30 animate-[ping_2s_ease-in-out_infinite]" />
       
-      <MessageCircle className="w-[26px] h-[26px] text-white" strokeWidth={2} />
+      <WhatsappIcon className="w-[26px] h-[26px] text-white" />
     </motion.a>
   )
 }

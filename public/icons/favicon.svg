@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background rounded square - dark charcoal -->
+  <rect width="512" height="512" rx="80" fill="#141414"/>
+  
+  <!-- W shape - geometric, bold, matching WRMAX style -->
+  <!-- The W has sharp angles like the logo letterform -->
+  <!-- Light gray color matching the logo: approx #D0D0D0 -->
+  
+  <!-- Left stroke going down-right -->
+  <polygon points="
+    60,90
+    100,90
+    220,380
+    180,380
+  " fill="#D2D2D2"/>
+  
+  <!-- Left inner stroke going up-right -->
+  <polygon points="
+    180,380
+    220,380
+    276,220
+    236,220
+  " fill="#D2D2D2"/>
+  
+  <!-- Right inner stroke going down-right -->
+  <polygon points="
+    236,220
+    276,220
+    332,380
+    292,380
+  " fill="#D2D2D2"/>
+  
+  <!-- Right stroke going up-right -->
+  <polygon points="
+    292,380
+    332,380
+    452,90
+    412,90
+  " fill="#D2D2D2"/>
+</svg>

@@ -1,7 +1,8 @@
 "use client"
 
 import { motion, useScroll, useTransform } from "framer-motion"
-import { ArrowRight, Check, MessageCircle } from "lucide-react"
+import { ArrowRight, Check } from "lucide-react"
+import { WhatsappIcon } from "./whatsapp-icon"
 import Image from "next/image"
 import { useRef } from "react"
 import { AnimatedCounter } from "./animated-counter"
@@ -64,7 +65,7 @@ export function Hero() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-yellow"></span>
             </span>
             <span className="text-[10px] font-bold text-yellow uppercase tracking-[1.5px]">
-              Hub de Estratégia · Teresina — PI
+              Hub de Estratégia · Teresina, PI
             </span>
           </motion.div> */}
 
@@ -109,14 +110,14 @@ export function Hero() {
               <ArrowRight className="w-3.5 h-3.5" />
             </motion.a>
             <motion.a
-              href="https://wa.me/5586999999999"
+              href="https://wa.me/5586999188465?text=Ol%C3%A1,%20vim%20do%20site%20da%20Wrmax%20e%20gostaria%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20de%20marketing."
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02, y: -2, borderColor: "rgba(255,215,0,0.5)" }}
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center gap-2 bg-transparent text-yellow border-2 border-yellow/35 px-6 py-3 rounded-lg text-[12px] font-bold uppercase tracking-wider transition-all hover:bg-yellow hover:text-black"
             >
-              <MessageCircle className="w-3.5 h-3.5" />
+              <WhatsappIcon className="w-3.5 h-3.5" />
               FALAR DIRETAMENTE
             </motion.a>
           </motion.div>

@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X, MessageCircle } from "lucide-react"
+import { Menu, X } from "lucide-react"
+import { WhatsappIcon } from "./whatsapp-icon"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -70,7 +71,7 @@ export function Header() {
               whileTap={{ scale: 0.98 }}
               className="flex items-center gap-2 bg-green text-white px-5 py-3 rounded-lg text-[11px] font-bold uppercase tracking-wider glow-green transition-all"
             >
-              <MessageCircle className="w-4 h-4" />
+              <WhatsappIcon className="w-4 h-4" />
               Falar com Consultor
             </motion.a>
           </nav>
@@ -112,7 +113,7 @@ export function Header() {
                   whileTap={{ scale: 0.98 }}
                   className="flex items-center justify-center gap-2 bg-green text-white px-5 py-4 rounded-lg text-[11px] font-bold uppercase tracking-wider"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <WhatsappIcon className="w-4 h-4" />
                   Falar com Consultor
                 </motion.a>
               </div>
