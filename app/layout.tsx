@@ -26,11 +26,14 @@ export const metadata: Metadata = {
   keywords: 'assessoria de marketing Teresina, tráfego pago Piauí, automação inteligência artificial, agência growth marketing, WRMAX',
   icons: {
     icon: [
-      { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
-      { url: '/icon-dark-32x32.png', media: '(prefers-color-scheme: dark)' },
-      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/icons/favicon.ico', type: 'image/x-icon' },
+      { url: '/icons/favicon.svg', type: 'image/svg+xml' },
+      { url: '/icons/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+      { url: '/icons/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
     ],
-    apple: '/apple-icon.png',
+    apple: [
+      { url: '/icons/favicon-256x256.png', sizes: '256x256' },
+    ],
   },
 }
 

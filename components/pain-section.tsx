@@ -7,7 +7,7 @@ const painPoints = [
   {
     icon: TrendingDown,
     title: "Vendas completamente estagnadas",
-    description: "Investe mês após mês e os números não saem do lugar. O problema não é o budget — é a falta de estrutura sistêmica."
+    description: "Investe mês após mês e os números não saem do lugar. O problema não é o budget, é a falta de estrutura sistêmica."
   },
   {
     icon: DollarSign,
@@ -27,7 +27,7 @@ const painPoints = [
   {
     icon: Shuffle,
     title: "Dependência de indicações para crescer",
-    description: "Sem máquina de aquisição previsível não há escala. Você precisa de um sistema — não de sorte ou networking."
+    description: "Sem máquina de aquisição previsível não há escala. Você precisa de um sistema, não de sorte ou networking."
   },
 ]
 
@@ -48,7 +48,7 @@ export function PainSection() {
   return (
     <section className="min-h-screen flex flex-col justify-center py-16 md:py-20 bg-black">
       <div className="container max-w-7xl mx-auto px-4 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-10 lg:gap-12 items-center">
           {/* Left content */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -89,25 +89,25 @@ export function PainSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="flex flex-col gap-3"
+            className="flex flex-col gap-2.5"
           >
             {painPoints.map((pain, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
-                whileHover={{ 
-                  x: 4, 
+                whileHover={{
+                  x: 4,
                   borderColor: "rgba(255,215,0,0.25)",
                   backgroundColor: "rgba(255,255,255,0.02)"
                 }}
-                className="flex items-start gap-4 p-4 bg-surface-2 border border-white/10 rounded-lg transition-all duration-300 cursor-default"
+                className="flex items-center gap-3 p-3 bg-surface-2 border border-white/10 rounded-lg transition-all duration-300 cursor-default"
               >
-                <div className="w-11 h-11 flex-shrink-0 rounded-lg bg-yellow/10 border border-yellow/20 flex items-center justify-center transition-all">
-                  <pain.icon className="w-[18px] h-[18px] text-yellow" />
+                <div className="w-9 h-9 flex-shrink-0 rounded-lg bg-yellow/10 border border-yellow/20 flex items-center justify-center transition-all">
+                  <pain.icon className="w-4 h-4 text-yellow" />
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-white mb-1">{pain.title}</p>
-                  <p className="text-[13px] text-white/60 leading-relaxed">{pain.description}</p>
+                  <p className="text-sm font-bold text-white mb-0.5">{pain.title}</p>
+                  <p className="text-[13px] text-white/60 leading-snug">{pain.description}</p>
                 </div>
               </motion.div>
             ))}

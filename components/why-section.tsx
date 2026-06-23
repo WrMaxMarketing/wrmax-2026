@@ -7,7 +7,7 @@ const differentials = [
   {
     icon: BookOpen,
     title: "Método, não Improviso",
-    description: "Processo documentado, testado e replicável. Cada decisão embasada em dados — não em feeling ou tendência de TikTok."
+    description: "Processo documentado, testado e replicável. Cada decisão embasada em dados, não em feeling ou tendência de TikTok."
   },
   {
     icon: Cpu,
@@ -17,12 +17,12 @@ const differentials = [
   {
     icon: MapPin,
     title: "Visão Nacional a partir do Piauí",
-    description: "Hub em Teresina com clientes de SP ao AM. Estratégia de alto nível não tem endereço fixo — e provamos isso a cada resultado."
+    description: "Hub em Teresina com clientes de SP ao AM. Estratégia de alto nível não tem endereço fixo, e provamos isso a cada resultado."
   },
   {
     icon: UserCheck,
     title: "Acesso Direto à Liderança",
-    description: "Seu projeto é gerido pelos próprios estrategistas — sem repassar para estagiários. Accountability total do início ao resultado."
+    description: "Seu projeto é gerido pelos próprios estrategistas, sem repassar para estagiários. Accountability total do início ao resultado."
   },
 ]
 
@@ -63,7 +63,7 @@ export function WhySection() {
             </h2>
             
             <p className="text-sm md:text-base text-white/60 leading-relaxed max-w-[440px]">
-              Agências tradicionais entregam relatórios. Nós entregamos sistemas de vendas que operam <span className="whitespace-nowrap">24 horas por dia</span>, <span className="whitespace-nowrap">7 dias por semana</span> — integrando tráfego, IA e automação ponta a ponta.
+              Agências tradicionais entregam relatórios. Nós entregamos sistemas de vendas que operam <span className="whitespace-nowrap">24 horas por dia</span>, <span className="whitespace-nowrap">7 dias por semana</span>,integrando tráfego, IA e automação ponta a ponta.
             </p>
           </motion.div>
 

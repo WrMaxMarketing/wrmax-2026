@@ -1,7 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ShieldCheck, Stethoscope, HeartPulse, Briefcase, Building, Syringe, User } from "lucide-react"
+import { Briefcase, Building, HeartPulse, Stethoscope, Syringe } from "lucide-react"
+import Image from "next/image"
 
 const logos = [
   { icon: Stethoscope, label: "Médicos" },
@@ -14,22 +15,25 @@ const logos = [
 
 const testimonials = [
   {
-    highlight: "Crescimento de 70% ao ano — 4 anos seguidos",
-    quote: "Em 90 dias o CPL caiu 62% e triplicamos atendimentos qualificados. A WRMAX não entrega tráfego, entrega estrutura de vendas.",
-    name: "Dr. Ricardo Mendes",
-    role: "Cirurgião Plástico · Teresina, PI",
+    youtubeId: "WQmb2Z8R4-Q",
+    avatar: "/depoimento-icons/caroline-baima.jpeg",
+    quote: "Conseguimos resultados muito bons, muitos contatos, agendamentos e novos clientes para a clínica através das estratégias aplicadas.",
+    name: "Dra. Caroline Baima",
+    role: "Dermatologista · Teresina, PI",
   },
   {
-    highlight: "Atendimento de 8h → 40 segundos com IA",
-    quote: "O agente de IA reduziu o tempo de resposta e a taxa de conversão subiu 4x. O método da WRMAX é outro nível de inteligência.",
-    name: "Dra. Amanda Reis",
-    role: "Dermatologista · Clínica Premium · São Paulo, SP",
+    youtubeId: "shoA2NCJevs",
+    avatar: "/depoimento-icons/kleverson-folha.jpeg",
+    quote: "A Wrmax mudou a nossa maneira de agir nas redes sociais através de planejamento bem desenvolvido e aplicado.",
+    name: "Dr. Kléverson Folha Gois",
+    role: "Advogado · Bom Jesus, PI",
   },
   {
-    highlight: "R$180K → R$700K/mês sem dobrar o time",
-    quote: "Escalamos sem aumentar a equipe. A automação de funil e os agentes de IA criaram uma operação que funciona sozinha.",
-    name: "Carlos Eduardo",
-    role: "CEO · Grupo de Clínicas Médicas · Brasília, DF",
+    youtubeId: "fm41XeVzlgY",
+    avatar: "/depoimento-icons/regina-nogueira.jpg",
+    quote: "Serviços de qualidade, empresa comprometida e competente com os resultados dos serviços digitais.",
+    name: "Enf. Regina Nogueira",
+    role: "CEO · Clínica Regina Nogueira · Alcinópolis, MS",
   },
 ]
 
@@ -123,24 +127,39 @@ export function SocialProof() {
             >
               {/* Top glow line on hover */}
               <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-yellow to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              
-              {/* Stars */}
-              <div className="text-yellow text-sm tracking-wider mb-3">★★★★★</div>
-              
-              {/* Highlight */}
-              <p className="text-[11px] font-bold text-yellow uppercase tracking-[1px] mb-2 min-h-[32px]">
-                {testimonial.highlight}
-              </p>
-              
+
+              {/* YouTube player */}
+              <div className="relative aspect-video rounded-xl overflow-hidden mb-4 border border-white/10 bg-black">
+                {testimonial.youtubeId ? (
+                  <iframe
+                    className="absolute inset-0 w-full h-full"
+                    src={`https://www.youtube.com/embed/${testimonial.youtubeId}`}
+                    title={`Depoimento ${testimonial.name}`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-white/30 uppercase tracking-[1.5px]">
+                    Vídeo do YouTube
+                  </div>
+                )}
+              </div>
+
               {/* Quote */}
-              <p className="text-[13px] text-white/60 leading-relaxed mb-auto min-h-[72px]">
+              <p className="text-[13px] text-white/60 leading-relaxed mb-auto">
                 &quot;{testimonial.quote}&quot;
               </p>
               
               {/* Author */}
               <div className="flex items-center gap-3 mt-5 pt-4 border-t border-white/10">
-                <div className="w-10 h-10 rounded-full bg-surface-3 border border-white/10 flex items-center justify-center flex-shrink-0">
-                  <User className="w-[18px] h-[18px] text-white/40" />
+                <div className="relative w-10 h-10 rounded-full overflow-hidden bg-surface-3 border border-white/10 flex-shrink-0">
+                  <Image
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    fill
+                    sizes="40px"
+                    className="object-cover"
+                  />
                 </div>
                 <div>
                   <p className="text-xs font-bold text-white">{testimonial.name}</p>

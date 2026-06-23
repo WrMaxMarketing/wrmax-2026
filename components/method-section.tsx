@@ -9,7 +9,7 @@ const methodCards = [
     tag: "Aquisição",
     icon: TrendingUp,
     title: "Tráfego Pago\nde Alta Performance",
-    description: "Meta Ads e Google Ads geridos com obsessão por ROI. Rastreamento preciso, teste A/B e otimização orientada por dados — não por feeling.",
+    description: "Meta Ads e Google Ads geridos com obsessão por ROI. Rastreamento preciso, teste A/B e otimização orientada por dados, não por feeling.",
     badges: [
       { icon: Facebook, label: "Meta" },
       { icon: Search, label: "Google" },
@@ -21,7 +21,7 @@ const methodCards = [
     tag: "Automação",
     icon: Workflow,
     title: "Automação e\nIntegração de Sistemas",
-    description: "Fluxos automáticos via n8n e APIs. Do lead ao CRM, do contrato à cobrança — cada etapa operando sem intervenção humana onde a IA age melhor.",
+    description: "Fluxos automáticos via n8n e APIs. Do lead ao CRM, do contrato à cobrança, cada etapa operando sem intervenção humana onde a IA age melhor.",
     badges: [
       { label: "n8n" },
       { label: "APIs" },
@@ -33,7 +33,7 @@ const methodCards = [
     tag: "Inteligência",
     icon: Bot,
     title: "Agentes de IA\npara Atendimento 24/7",
-    description: "Agentes treinados com a linguagem da sua empresa. Qualificam, nutrem e encaminham leads para o fechamento — sem dormir, sem errar protocolo.",
+    description: "Agentes treinados com a linguagem da sua empresa. Qualificam, nutrem e encaminham leads para o fechamento, sem dormir, sem errar protocolo.",
     badges: [
       { label: "GPT-4" },
       { label: "WhatsApp" },
@@ -108,7 +108,7 @@ export function MethodSection() {
             transition={{ delay: 0.2 }}
             className="text-base text-white/60 leading-relaxed max-w-[540px] mx-auto"
           >
-            Quatro pilares integrados que operam como um sistema — não como serviços isolados. Cada peça alimenta a próxima.
+            Quatro pilares integrados que operam como um sistema, não como serviços isolados. Cada peça alimenta a próxima.
           </motion.p>
         </div>
 

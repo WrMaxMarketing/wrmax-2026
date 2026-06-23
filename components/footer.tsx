@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowUpRight, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from "lucide-react"
+import { ArrowUpRight, Instagram, Mail, MapPin, Phone, Youtube } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -13,9 +13,8 @@ const footerLinks = [
 ]
 
 const socialLinks = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  { icon: Instagram, href: "https://www.instagram.com/wrmaxmarketing/", label: "Instagram" },
+  { icon: Youtube, href: "https://www.youtube.com/@WRMaxMarketing", label: "YouTube" },
 ]
 
 export function Footer() {
@@ -43,6 +42,8 @@ export function Footer() {
                 <motion.a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={social.label}
                   whileHover={{ borderColor: "rgba(255,215,0,0.35)", backgroundColor: "rgba(255,215,0,0.1)" }}
                   className="w-[38px] h-[38px] bg-surface-2 border border-white/10 rounded-lg flex items-center justify-center transition-all"
@@ -79,18 +80,18 @@ export function Footer() {
             </p>
             <div className="flex flex-col gap-3">
               <a
-                href="tel:+5586999999999"
+                href="https://wa.me/5586999188465?text=Ol%C3%A1,%20vim%20do%20site%20da%20Wrmax%20e%20gostaria%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20de%20marketing."
                 className="text-sm text-white/50 hover:text-white transition-colors flex items-center gap-2"
               >
                 <Phone className="w-3.5 h-3.5 text-yellow" />
                 (86) 9 9918-8465
               </a>
               <a
-                href="mailto:contato@wrmax.com.br"
+                href="mailto:atendimento@wrmaxmarketing.com.br"
                 className="text-sm text-white/50 hover:text-white transition-colors flex items-center gap-2"
               >
                 <Mail className="w-3.5 h-3.5 text-yellow" />
-                contato@wrmax.com.br
+                atendimento@wrmaxmarketing.com.br
               </a>
               <div className="text-sm text-white/50 flex items-start gap-2">
                 <MapPin className="w-3.5 h-3.5 text-yellow mt-0.5" />

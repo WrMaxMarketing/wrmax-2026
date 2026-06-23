@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     question: "Já tenho equipe de marketing interna. Por que contratar a WRMAX?",
-    answer: "Equipes internas são excelentes para execução. A WRMAX atua como conselheiro estratégico e braço tecnológico — trazendo IA, automações e visão externa de crescimento que raramente surge de dentro. Complementamos, não substituímos."
+    answer: "Equipes internas são excelentes para execução. A WRMAX atua como conselheiro estratégico e braço tecnológico, trazendo IA, automações e visão externa de crescimento que raramente surge de dentro. Complementamos, não substituímos."
   },
   {
     question: "Como funciona o modelo de atendimento?",
@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "O que diferencia a WRMAX de uma agência comum?",
-    answer: "Agências vendem serviço. Nós vendemos resultado. Nossa entrega é baseada em método, dados e IA integrada — não em criativos bonitos ou relatórios vagos. Cada ação é atribuída a uma métrica de negócio real: CAC, LTV, CPL, taxa de conversão."
+    answer: "Agências vendem serviço. Nós vendemos resultado. Nossa entrega é baseada em método, dados e IA integrada, não em criativos bonitos ou relatórios vagos. Cada ação é atribuída a uma métrica de negócio real: CAC, LTV, CPL, taxa de conversão."
   },
   {
     question: "Quanto tempo leva para ver resultados?",
